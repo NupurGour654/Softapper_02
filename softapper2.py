@@ -66,7 +66,9 @@ def main():
         play_again = input("Do you want to play again? (yes/no): ").lower()
         if play_again != "yes":
             print("Thanks for playing!")
-            break        
+            break   
+        show_board_positions()
+
 if __name__ == "__main__":
     main()
 
