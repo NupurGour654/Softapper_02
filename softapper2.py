@@ -71,10 +71,12 @@ elif is_draw(board):
             else:
                 print("The cell is already occupied. Please choose a different move.")
 
-        play_again = input("Do you want to play again? (yes/no): ").lower()
-        if play_again != "yes":
-            print("Thanks for playing!")
-            break   
+        while True:
+    play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+    if play_again in ["yes", "no"]:
+        break
+    print("Please enter 'yes' or 'no'.")
+ 
         show_board_positions()
 
 if __name__ == "__main__":
