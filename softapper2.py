@@ -43,6 +43,9 @@ def get_move(player):
 def main():
     print("Welcome to Tic Tac Toe!")
     while True:
+        os.system('cls' if os.name == 'nt' else 'clear')
+print_board(board)
+
         board = [[" " for _ in range(3)] for _ in range(3)]
         current_player = "X"
         print_board(board)
