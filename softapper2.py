@@ -8,6 +8,9 @@ def show_board_positions():
 
 
 def print_board(board):
+    def print_board(board):
+    """Display the current Tic Tac Toe board."""
+
     print("\n")
     for row in board:
         print(" | ".join(row))
