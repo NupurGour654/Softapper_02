@@ -59,12 +59,14 @@ print_board(board)
                 print_board(board)
 
                 if check_winner(board, current_player):
-                    print(f"Player {current_player} wins!")
-                    break
-                elif is_draw(board):
-                    print("It's a draw!")
-                    break
-                current_player = "O" if current_player == "X" else "X"
+    print(f"Player {current_player} wins!")
+    score[current_player] += 1
+    break
+elif is_draw(board):
+    print("It's a draw!")
+    score["Draw"] += 1
+    break
+
             else:
                 print("The cell is already occupied. Please choose a different move.")
 
