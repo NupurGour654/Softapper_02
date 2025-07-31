@@ -29,6 +29,8 @@ def is_draw(board):
     return all(all(cell != " " for cell in row) for row in board)
 
 def get_move(player):
+    score = {"X": 0, "O": 0, "Draw": 0}
+
     while True:
         try:
             move = int(input(f"Player {player}, enter your move (1-9): "))
