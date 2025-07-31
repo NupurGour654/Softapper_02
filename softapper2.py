@@ -1,3 +1,12 @@
+def show_board_positions():
+    print("\nBoard Positions:")
+    positions = [[str(i + j * 3 + 1) for i in range(3)] for j in range(3)]
+    for row in positions:
+        print(" | ".join(row))
+        print("-" * 6)
+    print()
+
+
 def print_board(board):
     print("\n")
     for row in board:
